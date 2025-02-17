@@ -1,5 +1,6 @@
 ﻿# backend-stock-manager
-**.env**: 
+**.env**:
+
 -DATABASE_URL=postgres://user:password@url:port/db
 
 -PORT=3000
