@@ -6,15 +6,15 @@ const router = express.Router();
 
 router.post("/sub-categories", SubCategoryController.createSubCategory);
 router.get(
-  "/api/sub-categories/:uuid",
+  "/sub-categories/:uuid",
   SubCategoryController.getSubCategoriesByParent
 );
 router.put(
-  "/api/sub-categories/:uuid",
+  "/sub-categories/:uuid",
   SubCategoryController.updateSubCategory
 );
 router.delete(
-  "/api/sub-categories/:uuid",
+  "/sub-categories/:uuid",
   SubCategoryController.deleteSubCategory
 );
 
