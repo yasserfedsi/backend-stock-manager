@@ -5,16 +5,16 @@ const ComponentController = require("../controllers/componentController");
 const router = express.Router();
 
 router.post("/components", ComponentController.createComponent);
-router.get("/api/components", ComponentController.getAllComponents);
+router.get("/components", ComponentController.getAllComponents);
 router.get(
-  "/api/components/category/:uuid",
+  "/components/category/:uuid",
   ComponentController.getComponentsByCategory
 );
 router.get(
-  "/api/components/sub_category/:uuid",
+  "/components/sub_category/:uuid",
   ComponentController.getComponentsBySubCategory
 );
-router.put("/api/components/:uuid", ComponentController.updateComponent);
-router.delete("/api/components/:uuid", ComponentController.deleteComponent);
+router.put("/components/:uuid", ComponentController.updateComponent);
+router.delete("/components/:uuid", ComponentController.deleteComponent);
 
 module.exports = router;

@@ -3,10 +3,12 @@ const CategoryService = require("../services/categoryService");
 const CategoryController = {
   createCategory: async (req, res) => {
     const { categoryName } = req.body;
+    console.log(categoryName);
     try {
       const category = await CategoryService.createCategory(categoryName);
       res.status(201).json(category);
     } catch (err) {
+      /* console.error(err); */
       res.status(500).json({ error: err.message });
     }
   },
