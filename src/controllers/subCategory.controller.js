@@ -1,4 +1,4 @@
-const SubCategoryService = require("../services/subCategoryService");
+const SubCategoryService = require("../services/subCategory.service");
 
 const SubCategoryController = {
   createSubCategory: async (req, res) => {

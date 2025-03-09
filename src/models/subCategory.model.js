@@ -3,7 +3,7 @@ const sql = require("../config/db");
 const SubCategory = {
   create: async (subCategoryName, parent) => {
     return sql`
-      INSERT INTO component_manager.sub_category (subCategoryName, parent)
+      INSERT INTO component_manager.sub_category (sub_category_name, parent)
       VALUES (${subCategoryName}, ${parent}) RETURNING *;
     `;
   },
@@ -15,7 +15,7 @@ const SubCategory = {
   update: async (uuid, subCategoryName, parent) => {
     return sql`
       UPDATE component_manager.sub_category
-      SET subCategoryName = ${subCategoryName},
+      SET sub_category_name = ${subCategoryName},
           parent          = ${parent}
       WHERE uuid = ${uuid} RETURNING *;
     `;

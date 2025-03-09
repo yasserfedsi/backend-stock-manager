@@ -1,5 +1,5 @@
-// services/subComponentService.js
-const SubComponent = require("../models/subcomponent.model");
+// services/subComponent.service.js
+const SubComponent = require("../models/subComponent.model");
 
 const SubComponentService = {
   createSubComponent: async (super_uuid, place, note) => {

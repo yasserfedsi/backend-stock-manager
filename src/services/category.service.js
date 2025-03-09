@@ -1,4 +1,4 @@
-// services/categoryService.js
+// services/category.service.js
 const Category = require("../models/category.model");
 
 const CategoryService = {

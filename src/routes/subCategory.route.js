@@ -1,6 +1,6 @@
 // routes/subCategoryRoutes.js
 const express = require("express");
-const SubCategoryController = require("../controllers/subCategoryController");
+const SubCategoryController = require("../controllers/subCategory.controller");
 
 const router = express.Router();
 

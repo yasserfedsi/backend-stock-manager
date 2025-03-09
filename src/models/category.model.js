@@ -2,7 +2,6 @@ const sql = require("../config/db");
 
 const Category = {
   create: async (category_name) => {
-    console.log("category_name: ", category_name);
     return sql`
       INSERT INTO component_manager.category (category_name)
       VALUES (${category_name}) RETURNING *;

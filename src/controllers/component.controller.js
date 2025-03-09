@@ -1,4 +1,4 @@
-const ComponentService = require("../services/componentService");
+const ComponentService = require("../services/component.service");
 
 const ComponentController = {
   createComponent: async (req, res) => {

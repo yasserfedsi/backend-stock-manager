@@ -1,6 +1,6 @@
 // routes/subComponentRoutes.js
 const express = require("express");
-const SubComponentController = require("../controllers/subComponentController");
+const SubComponentController = require("../controllers/subComponent.controller");
 
 const router = express.Router();
 

@@ -1,4 +1,4 @@
-// services/componentService.js
+// services/component.service.js
 const Component = require("../models/component.model");
 
 const ComponentService = {

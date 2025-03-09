@@ -1,4 +1,4 @@
-const SubComponentService = require("../services/subComponentService");
+const SubComponentService = require("../services/subComponent.service");
 
 const SubComponentController = {
   createSubComponent: async (req, res) => {

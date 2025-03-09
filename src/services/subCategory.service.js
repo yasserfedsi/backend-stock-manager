@@ -1,5 +1,5 @@
-// services/subCategoryService.js
-const SubCategory = require("../models/subcategory.model");
+// services/subCategory.service.js
+const SubCategory = require("../models/subCategory.model");
 
 const SubCategoryService = {
   createSubCategory: async (subCategoryName, parent) => {
