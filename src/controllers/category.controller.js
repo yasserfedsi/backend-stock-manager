@@ -33,7 +33,9 @@ const CategoryController = {
     const { uuid } = req.params;
     try {
       await CategoryService.deleteCategory(uuid);
-      res.status(204).send();
+      res.status(201).json({
+        message: `Category with uuid: ${uuid} deleted successfully`,
+      });
     } catch (err) {
       res.status(500).json({ error: err.message });
     }
