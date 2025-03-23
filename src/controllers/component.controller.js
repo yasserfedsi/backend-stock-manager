@@ -67,7 +67,9 @@ const ComponentController = {
     const { uuid } = req.params;
     try {
       await ComponentService.deleteComponent(uuid);
-      res.status(204).send();
+      res.status(200).json({
+        message: `Component with uuid ${uuid} has been deleted`,
+      });
     } catch (err) {
       res.status(500).json({ error: err.message });
     }
